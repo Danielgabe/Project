@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FrontLiner</string>
+    <string name="logo">Logo</string>
+    <string name="hint_username">username</string>
+    <string name="hint_password">password</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Login">LOGIN</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="frontliner">FRONTLINER</string>
+    <string name="logout">LOGOUT</string>
+    <string name="antrian">ANTRIAN</string>
+    <string name="no">301</string>
+    <string name="layananumum">Layanan Umum</string>
+    <string name="layanansurveyor">Layanan Surveyor</string>
+    <string name="klaimtla">Klaim TLA</string>
+    <string name="layani">LAYANI</string>
+    <string name="sisaantrian">SISA ANTRIAN</string>
+    <string name="noantrian">No Antrian</string>
+    <string name="terimaSPK">Terima SPK</string>
+    <string name="surveyKlaim">Survey Klaim</string>
+    <string name="Confirm">CONFIRM</string>
+    <string name="KlaimTLA">Klaim TLA</string>
+    <string name="sisa">5</string>
+
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/up_bar"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/frontliner_logo" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/image1"
+            android:paddingTop="10dp"
+            android:text="@string/frontliner"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/buttonLogout1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/home" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relantrian"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textantrian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/noantrian"
+            android:textColor="#1E90FF"
+            android:textSize="40dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nourutSVY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/no"
+        android:textColor="#FAAF76"
+        android:textSize="100dp" />
+
+    <ImageView
+        android:id="@+id/layananboxlabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/layanansurveyor" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_data" >
+
+        <Spinner
+            android:id="@+id/spinnerSVY"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/combo_box" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/layananboxlabel2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/layanan_umum_bar" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp" >
+
+            <ScrollView
+                android:layout_width="280dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/buttonMinus"
+                android:layout_toRightOf="@+id/buttonPlus" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutLayananUmum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/buttonPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/add_icon" />
+
+            <Button
+                android:id="@+id/buttonMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_alignBaseline="@+id/buttonPlus"
+                android:layout_alignBottom="@+id/buttonPlus"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="51dp"
+                android:background="@drawable/remove_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp" >
+
+        <Button
+            android:id="@+id/btnTransferKeCashier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn_transfer_ke_cashier" />
+
+        <Button
+            android:id="@+id/btnSelesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/btnTransferKeCashier"
+            android:background="@drawable/btn_selesai" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/btnTransferCSO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/btn_transfer_ke_cso" />
+
+        <Button
+            android:id="@+id/btnPanggilUlang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/btnTransferCSO"
+            android:background="@drawable/btn_panggil_ulang" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/btnTransferSurveyor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/btn_transfer_ke_surveyor" />
+
+        <Button
+            android:id="@+id/btnNoShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/btnTransferSurveyor"
+            android:background="@drawable/btn_tidak_hadir" />
+    </RelativeLayout>
+
+</LinearLayout>

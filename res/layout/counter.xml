@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/up_bar"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/frontliner_logo" />
+
+        
+
+        <Button
+            android:id="@+id/buttonLogout1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/home" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutpilihcounter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/tpilihcounter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Pilih Counter"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/comboboxx" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Pilih Counter"
+            android:textColor="#1E90FF"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/checkboxcso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/customer_service_on"
+                android:button="@android:color/transparent"
+                android:layout_marginRight="10dp" >
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/checkboxcsh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/cashier_on"
+                android:button="@android:color/transparent"
+                android:layout_marginRight="10dp" >
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/checkboxsvy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:button="@android:color/transparent"
+                android:background="@drawable/surveyor_on" >
+
+            </CheckBox>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignTop="@+id/linearLayout1"
+            android:layout_marginLeft="161dp"
+            android:layout_marginTop="-40dp"
+            android:text="Pilih Role"
+            android:textColor="#1E90FF"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/layoutPilihRole" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginTop="50dp" -->
+    <!-- android:gravity="clip_horizontal" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tpilihRole" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="30dp" -->
+    <!-- android:layout_marginTop="5dp" -->
+    <!-- android:text="Pilih Role" -->
+    <!-- android:textColor="#ffffff" -->
+    <!-- android:textSize="20dp" /> -->
+
+
+    <!-- <CheckBox -->
+    <!-- android:id="@+id/checkboxcso" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="30dp" -->
+    <!-- android:layout_toRightOf="@+id/pilihRole" -->
+    <!-- android:background="@drawable/cashier_on" -->
+    <!-- > -->
+    <!-- </CheckBox> -->
+
+
+    <!-- <CheckBox -->
+    <!-- android:id="@+id/checkboxsvy" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="30dp" -->
+    <!-- android:layout_marginTop="100dp" -->
+    <!-- android:layout_toRightOf="@+id/pilihRole" -->
+    <!-- android:background="@drawable/checkbox" > -->
+    <!-- </CheckBox> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tCSH" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="10dp" -->
+    <!-- android:layout_marginTop="50dp" -->
+    <!-- android:layout_toRightOf="@+id/checkboxcsh" -->
+    <!-- android:text="Cashier" -->
+    <!-- android:textColor="#000000" -->
+    <!-- android:textSize="20dp" /> -->
+
+
+    <!-- <CheckBox -->
+    <!-- android:id="@+id/checkboxcsh" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="30dp" -->
+    <!-- android:layout_marginTop="50dp" -->
+    <!-- android:layout_toRightOf="@+id/pilihRole" -->
+    <!-- android:background="@drawable/customer_service_on" > -->
+    <!-- </CheckBox> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tSVY" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="10dp" -->
+    <!-- android:layout_marginTop="100dp" -->
+    <!-- android:layout_toRightOf="@+id/checkboxcsh" -->
+    <!-- android:text="Surveyor" -->
+    <!-- android:textColor="#000000" -->
+    <!-- android:textSize="20dp" /> -->
+    <!-- </RelativeLayout> -->
+
+    <Button
+        android:id="@+id/btnSubmitCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/layani_button"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <RelativeLayout
+        android:id="@+id/layoutsubmit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center" >
+    </RelativeLayout>
+
+</LinearLayout>

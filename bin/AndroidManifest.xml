@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.frontlinerprojek"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.example.frontlinerproject.GlobalClass"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="monica.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="5" />
+
+        <activity android:name="com.example.frontlinerproject.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.frontlinerproject.CounterActivity" >
+        </activity>
+        <activity android:name="com.example.frontlinerproject.AntrianActivity" >
+        </activity>
+        <activity android:name="com.example.frontlinerproject.LayananSurveyorActivity" >
+        </activity>
+        <activity android:name="com.example.frontlinerproject.LayananSurveyor" >
+        </activity>
+        <activity android:name="com.example.frontlinerproject.TransferSurveyor" >
+        </activity>
+        <activity android:name="com.example.frontlinerproject.TransferNonSurveyor" >
+        </activity>
+        <activity android:name="com.example.frontlinerproject.NonTransferSurveyor" >
+        </activity>
+        <activity android:name="com.example.frontlinerproject.LayananNonSurveyorActivity" >
+        </activity>
+        <activity android:name="com.example.frontlinerproject.NonTransferNonSurveyor" >
+        </activity>
+    </application>
+
+</manifest>

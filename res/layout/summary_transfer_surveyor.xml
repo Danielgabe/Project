@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/up_bar"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/frontliner_logo" />
+
+        <Button
+            android:id="@+id/buttonLogout1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/home" >
+        </Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relantrian"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textantrian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/noantrian"
+            android:textColor="#1E90FF"
+            android:textSize="40dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nourutTransferSVY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/no"
+        android:textColor="#FAAF76"
+        android:textSize="100dp" />
+
+    <ImageView
+        android:id="@+id/layananboxlabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/layanansurveyor" />
+
+    <Button
+        android:id="@+id/buttonLayananSVYTransferSVY"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_data"
+        android:text="@string/KlaimTLA"
+        android:textColor="#2D9DBE"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/layananboxlabel1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/layanan_umum_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.30" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutUmumTransferSVY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/layananboxlabel2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/inisialidbar" />
+
+    <Spinner
+        android:id="@+id/initialIdTransferSVY"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/combo_box" />
+
+    <Button
+        android:id="@+id/buttonRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="-60dp"
+        android:background="@drawable/refresh" />
+
+    <Button
+        android:id="@+id/buttonConfirmTransferSVY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btnok" />
+
+</LinearLayout>
